@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 5px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #555555;
+        }
+
+        .button1:hover {
+            background-color: #555555;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color:LightGray;">
+<br>
+<h1 style="background-color:Tomato;">
+    &emsp; Please fill in the details to become a member. Grab Exciting offers !!
+</h1>
+<br>
+<br>
+<form action="NewRegistrations" method="post">
+
+    <p>
+        <label><strong> First Name : </strong></label>
+        <input type = "text" name = "firstName" size = "20" />
+        &emsp;
+        <label><strong> Last Name : </strong></label>
+        <input type = "text" name = "lastName" size = "20" />
+    </p>
+
+    <p>
+        <label><strong>Gender : </strong></label>
+        &emsp;
+        <input type = "radio" name = "gender" value = "M" checked />
+        Male
+        <input type = "radio" name = "gender" value = "F" /> Female
+    </p>
+
+    <p>
+        <label><strong>Email ID : </strong> </label>
+
+        <input type="text" name="email" size = "30"/>
+    </p>
+
+    <p>
+        <label><strong>Mobile No :  </strong></label>
+
+        <input type="number" name="contact" size = "10"/>
+    </p>
+
+    <p>
+        <label><strong>Account : </strong></label>
+        &emsp;
+        <input type = "radio" name = "accountType" value = "savings" checked />
+        Savings
+        <input type = "radio" name = "accountType" value = "current" /> Current
+    </p>
+
+    <p>
+        <label><strong>Username :  </strong></label>
+
+        <input type="text" name="userid" size = "20"/>
+    </p>
+
+    <p>
+        <label><strong>Password : </strong></label>
+        <input type="password" name="password" size = "20"/>
+    </p>
+    <br><br>
+<p> &emsp; &emsp;
+    <input class="button button1" type="submit" value="Register!!"/>
+    &emsp;
+    <input class="button button1" type="reset" value="Reset"/>
+</p>
+
+    <br>
+    <br>
+    <h3>
+        <p>Dont want to Register ?? <a href="index.jsp"> Back to Home page </a></p>
+    </h3>
+
+</form>
+</body>
+</html>
